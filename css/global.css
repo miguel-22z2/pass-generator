@@ -1,0 +1,112 @@
+:root {
+   --cor-principal: #323232;
+   --cor-secundaria: #4a8507;
+   --cor-secundaria-transparencia: #4a8507ac;
+   --cor-auxiliar-1: #000000;
+   --cor-auxiliar-2: #ffffff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+   font-family: 'Courier New', Courier, monospace;
+   border: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: var(--cor-principal);
+   color: var(--cor-auxiliar-2);
+   display: flex;
+   flex-direction: column;    /* Elementos um embaixo do outro */
+   justify-content: flex-start; /* Alinha no TOPO vertical da página */
+   align-items: center;        /* Centraliza na HORIZONTAL */
+   min-height: 100vh;
+   margin: 0;
+   padding-top: 40px;          /* Pequeno espaço no topo para o título respirar */
+   gap: 20px;                  /* Espaçamento padrão entre o título, imagem e o formulário */
+}
+
+#formPass {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#btnFunction {
+   padding: 8px 16px; 
+   border-radius: 5px;
+   background-color: var(--cor-secundaria);
+   color: var(--cor-auxiliar-2);
+   cursor: pointer;
+   display: inline-block;
+   font-weight: bold;
+   transition: 250ms;
+}
+
+#btnFunction:hover {
+    background-color: #3c680a;
+}
+
+#resultLocal {
+   background-color: #575757;
+   padding: 10px;
+   border-radius: 5px;
+   display: flex;            
+   align-items: center;      
+   justify-content: space-between; 
+   gap: 5px;                
+   width: 250px;
+}
+
+#resultLocal span {
+   display: inline-block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   flex-grow: 1;             
+   text-align: left;         
+}
+
+#buttonC {
+   background-color: transparent;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: 600ms;
+   flex-shrink: 0;           
+   padding: 5px;
+   transition: 650ms; 
+}
+
+#buttonC:hover {
+    background-color: #ffffff;
+}
+
+#passLength {
+   border-radius: 5px;
+   background-color: #575757;
+   color: #ffffff;
+   padding: 6px;
+   text-align: center;
+   width: 50px;
+}
+
+#infoPass {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+#rodape a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
